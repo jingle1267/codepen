@@ -161,11 +161,11 @@
             </div>
           </el-dropdown-item>
           <el-dropdown-item style="padding: 0;">
-            <a class="el-dropdown-menu__item fake-anchor" target="_blank" href="https://github.com/egoist/codepan"><link2-icon></link2-icon> Source Code</a>
+            <a class="el-dropdown-menu__item fake-anchor" target="_blank" href="https://github.com/jingle1267/codepen.git"><link2-icon></link2-icon> Source Code</a>
           </el-dropdown-item>
-          <el-dropdown-item style="padding: 0;">
+          <!--<el-dropdown-item style="padding: 0;">
             <a class="el-dropdown-menu__item fake-anchor" target="_blank" href="https://twitter.com/_egoistlily"><twitter-icon></twitter-icon> Follow me on Twitter</a>
-          </el-dropdown-item>
+          </el-dropdown-item>-->
           <el-dropdown-item style="padding: 0;">
             <a
               target="_blank"

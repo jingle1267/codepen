@@ -1,0 +1,32 @@
+language: node_js
+node_js:
+- 12.10.0
+
+# Travis-CI Caching
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm install
+
+before_script:
+
+script:
+  - npm run build
+
+after_script:
+  - cd ./dist
+  - git init
+  - git config user.name "${NAME}"
+  - git config user.email "${EMAIL}"
+  - git add .
+  - git commit -m "update from travis"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_NAME}" master:gh-pages
+# E: Build LifeCycle
+
+branches:
+  only:
+    - master
+env:
+ global:
