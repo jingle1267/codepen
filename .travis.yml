@@ -8,12 +8,13 @@ cache:
     - node_modules
 
 install:
-  - npm install
+  - npm install yarn
+  - yarn install
 
 before_script:
 
 script:
-  - npm run build
+  - yarn build
 
 after_script:
   - cd ./dist
