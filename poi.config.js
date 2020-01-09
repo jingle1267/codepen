@@ -14,6 +14,8 @@ module.exports = {
   extendWebpack(config) {
     config.module.set('noParse', /babel-preset-vue/)
 
+    config.output.publicPath = './'
+
     config.module.rule('js')
       .include
       .add(nodeModules())
