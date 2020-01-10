@@ -14,7 +14,14 @@ module.exports = {
   extendWebpack(config) {
     config.module.set('noParse', /babel-preset-vue/)
 
-    config.output.publicPath = './'
+
+    if (process.env.NODE_ENV === 'production') {
+      console.log('=========1')
+      config.output.publicPath = './codepen/'
+    } else {
+      console.log('=========2')
+      config.output.publicPath = './'
+    }
 
     config.module.rule('js')
       .include
