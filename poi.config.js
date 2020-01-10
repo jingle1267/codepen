@@ -15,13 +15,13 @@ module.exports = {
     config.module.set('noParse', /babel-preset-vue/)
 
 
-    if (process.env.NODE_ENV === 'production') {
-      console.log('=========1')
-      config.output.publicPath = './codepen/'
-    } else {
-      console.log('=========2')
-      config.output.publicPath = './'
-    }
+    // if (process.env.NODE_ENV === 'production') {
+    //   console.log('=========1')
+    //   config.output.publicPath = './codepen/'
+    // } else {
+    //   console.log('=========2')
+    //   config.output.publicPath = './'
+    // }
 
     config.module.rule('js')
       .include
@@ -37,7 +37,7 @@ module.exports = {
     sourceMap: false
   },
   hash: false,
-  homepage: '/',
+  homepage: './codepen/',
   env: Object.assign({
     VERSION: `v${pkg.version}-${repoLatestCommit().commit.slice(0, 7)}`,
     LATEST_COMMIT: repoLatestCommit().commit.slice(0, 7)
