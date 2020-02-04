@@ -33,6 +33,7 @@ const router = new Router({
       component: GitHubSuccess
     },
     {
+      name: 'not-found',
       path: 'NotFound',
       component: NotFound
     },
