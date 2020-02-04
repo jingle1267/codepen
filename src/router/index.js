@@ -33,8 +33,12 @@ const router = new Router({
       component: GitHubSuccess
     },
     {
-      path: '*',
+      path: 'NotFound',
       component: NotFound
+    },
+    {
+      path: '*',
+      component: EditorPage
     }
   ]
 })
