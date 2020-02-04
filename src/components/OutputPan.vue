@@ -292,7 +292,7 @@ export default {
               method: 'PATCH',
               params,
               data: {
-                description: `Try it online! https://codepan.net/gist/${
+                description: `Try it online! https://94275.cn/codepen/gist/${
                   data.id
                 }`
               }

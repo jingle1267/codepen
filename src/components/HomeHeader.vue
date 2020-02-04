@@ -33,7 +33,6 @@
         size="mini">
         Add library
       </el-button>
-      <span class="home-header-left-item changelog-indicator"></span>
     </div>
     <div class="home-header-middle home-header-block pan-toggles">
       <span
@@ -170,7 +169,7 @@
             <a
               target="_blank"
               class="el-dropdown-menu__item fake-anchor"
-              :href="`https://github.com/egoist/codepan/commit/${latestCommit}`">
+              :href="`https://github.com/jingle1267/codepen/commit/${latestCommit}`">
               <info-icon></info-icon>
               {{ version }}
             </a>

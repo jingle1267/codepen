@@ -35,7 +35,7 @@
     </div>
 
     <div ref="codefund">
-      <div class="codefund-placeholder">Code online</div>
+      <div class="codefund-placeholder">Code online <a href="https://94275.cn/">https://94275.cn/</a></div>
     </div>
   </div>
 </template>
